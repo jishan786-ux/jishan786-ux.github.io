@@ -1,0 +1,212 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg: #0d1117;
+    --second: #161b22;
+    --text: #ffffff;
+    --main: #00e5ff;
+    --gray: #c9d1d9;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+section {
+    min-height: 100vh;
+    padding: 100px 10%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.heading span {
+    color: var(--main);
+}
+
+
+/* ===========================
+        NAVBAR
+=========================== */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #0d1117ee;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+}
+
+.logo {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.logo span {
+    color: var(--main);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 35px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--main);
+}
+
+
+/* ===========================
+        HOME
+=========================== */
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.home-content {
+    flex: 1;
+}
+
+.home-content h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.home-content h1 {
+    font-size: 65px;
+    margin: 10px 0;
+}
+
+.home-content h3 span {
+    color: var(--main);
+}
+
+.home-content p {
+    color: var(--gray);
+    margin: 20px 0;
+    line-height: 1.8;
+    font-size: 17px;
+    max-width: 600px;
+}
+
+
+/* ===========================
+IMAGE
+=========================== */
+
+.home-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.home-img img {
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid var(--main);
+    box-shadow: 0 0 25px var(--main), 0 0 60px rgba(0, 229, 255, .5);
+    transition: .4s;
+}
+
+.home-img img:hover {
+    transform: scale(1.05);
+}
+
+
+/* ===========================
+SOCIAL ICONS
+=========================== */
+
+.social-icons {
+    margin: 25px 0;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--main);
+    color: var(--main);
+    text-decoration: none;
+    font-size: 22px;
+    transition: .4s;
+}
+
+.social-icons a:hover {
+    background: var(--main);
+    color: #000;
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px var(--main);
+}
+
+
+/* ===========================
+BUTTONS
+=========================== */
+
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: var(--main);
+    color: black;
+    border-radius: 35px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s;
+    margin-right: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px var(--main);
+}
+
+.btn2 {
+    background: transparent;
+    color: white;
+    border: 2px solid var(--main);
+}
+
+.btn2:hover {
+    background: var(--main);
+    color: black;
+}
