@@ -1,1 +1,0 @@
-console.log('Jishan Portfolio Loaded');
